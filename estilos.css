@@ -1,0 +1,19 @@
+
+.formulario{
+width: 30%;
+margin: auto;
+}
+.tabla{
+width: 50%;
+margin: auto;
+}
+.resultados{
+width: 80%;
+margin: auto;
+padding-top: 1rem;
+}
+
+.btn-block{
+    width: 100%;
+}
+
