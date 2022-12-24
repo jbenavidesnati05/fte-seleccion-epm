@@ -12,42 +12,30 @@
     <header>
       <nav class="navbar bg-light">
         <div class="container">
-          <a class="navbar-brand" href="https://cu.epm.com.co/clientesyusuarios/politica-de-privacidad" target="_blank">
+          <a class="navbar-brand" href="#">
             <img src="img/Logo_EPMsvg.png" alt="Bootstrap" width="100">
           </a>
           <a class="navbar-brand" href="#">
-            <h4>Soluciones Centro de Sevicios | EPM </h4>
+            <h4>Cálculo de planta de personal requerido | EPM </h4>
           </a>
         </div>
       </nav>
-    </header>   
-    <div class="container">
-        <div class="soluciones row">
-          <div class="solucion col ">
-            <a href="personal.html"><img src="img/personas.jpg" alt=""></a>
-            <p>Cantidad de personas</p>
-          </div>
-          <div class="solucion col">
-            <a href=""><img src="img/personas.jpg" alt=""></a>
-            <p>Cantidad de personas</p>
-          </div>
-          <div class="solucion col">
-            <a href=""><img src="img/personas.jpg" alt=""></a>
-            <p>Cantidad de personas</p>
-          </div>
-          <div class="solucion col">
-            <a href=""><img src="img/personas.jpg" alt=""></a>
-            <p>Cantidad de personas</p>
-          </div>
-          <div class="solucion col">
-            <a href=""><img src="img/personas.jpg" alt=""></a>
-            <p>Cantidad de personas</p>
-          </div>
-          <div class="solucion col">
-            <a href=""><img src="img/personas.jpg" alt=""></a>
-            <p>Cantidad de personas</p>
-          </div>
-        </div>
+    </header>
+    <section class="formulario">
+      <div>
+        <label for="">Cantidad de procesos por mes </label>
+        <input id="cantProcesos" class="form-control mt-4" type="number" placeholder="Ingresar el numero de procesos por mes">
+        <input onclick="calcular()" class="btn btn-success mt-4 btn-block"  type="submit" value="Calcular">
+    </div>
+    </section>
+    <div class="resultados mt-2">
+      <div id="resultadosPreseleccion"></div>
+      <div id="resultadosReclutamiento"></div>
+      <div id="aplicacionPruebas"></div>
+      <div id="valoracion"></div>
+      <div id="actFinales"></div>
+      <div id="vinculacion"></div>
+      <div  class="alert alert-success mt-3" id="total"></div>
     </div>
     <footer>
       <div class="logos container">
@@ -73,5 +61,6 @@
       <p>EPM © Todos los derechos reservados 2022</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="main.js" ></script>
   </body>
 </html>
