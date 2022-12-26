@@ -49,3 +49,14 @@ footer p{
 
 
 
+.regresar{
+    background-color: #007934;
+    color: white;
+    padding: 0.2rem 0.5rem 0.5rem  ;
+    border-radius: 1rem;
+}
+.regresar:hover{
+    background-color: #4fb412;
+}
+
+
