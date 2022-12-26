@@ -1,43 +1,63 @@
-
-
 function calcular(){
-
-    const cantProcesos =parseFloat( document.getElementById("cantProcesos").value);
-    console.log("cantidad de procesos = ",cantProcesos);
+    const cantProcesos = (document.getElementById("cantProcesos").value);
     
-    if (cantProcesos == "NaN") {
+    if (cantProcesos == "") {
         alert("Ingresar una cantidad de procesos")
         
     } else {
-    
-        const reclutamiento = (parseInt(cantProcesos)/15).toFixed(2)
-        console.log(reclutamiento);
-    
-        document.getElementById('resultadosPreseleccion').innerHTML = ` <h6>La cantidad de personas para <strong>Reclutamiento</strong> son: ${reclutamiento}</h6>`;
-        const preseleccion = (parseInt(cantProcesos)/25).toFixed(2)
-        document.getElementById('resultadosReclutamiento').innerHTML = ` <h6>La cantidad de personas para <strong>Preselección</strong> son: ${preseleccion}</h6>`;
-    
+        const reclutamiento     = (parseInt(cantProcesos)/15).toFixed(2)
+        const preseleccion      = (parseInt(cantProcesos)/25).toFixed(2)
         const aplicacionPruebas = (parseInt(cantProcesos)/13).toFixed(2)
-        document.getElementById('aplicacionPruebas').innerHTML = ` <h6>La cantidad de personas para <strong>Apicación de pruebas</strong> son: ${aplicacionPruebas}</h6>`;
-        console.log(aplicacionPruebas);
-        
-        const valoracion = (parseInt(cantProcesos)/14).toFixed(2)
-        document.getElementById('valoracion').innerHTML = ` <h6>La cantidad de personas para <strong>Valoración</strong> son: ${valoracion}</h6>`;
-        console.log(aplicacionPruebas);
-        
-        const actFinales = (parseInt(cantProcesos)/49).toFixed(2)
-        document.getElementById('actFinales').innerHTML = ` <h6>La cantidad de personas para <strong>Actividades finales </strong> son: ${actFinales}</h6>`;
-        console.log(aplicacionPruebas);
-    
-        const vinculacion = (parseInt(cantProcesos)/39).toFixed(2)
-        document.getElementById('vinculacion').innerHTML = ` <h6r>La cantidad de personas para <strong>Vinculación</strong> son: ${vinculacion}</h6r>`;
-        console.log(aplicacionPruebas);
-    
+        const valoracion        = (parseInt(cantProcesos)/14).toFixed(2)
+        const actFinales        = (parseInt(cantProcesos)/49).toFixed(2)
+        const vinculacion       = (parseInt(cantProcesos)/39).toFixed(2)
+
         const total = ((parseInt(cantProcesos)/15)+(parseInt(cantProcesos)/25)+(parseInt(cantProcesos)/13)+(parseInt(cantProcesos)/14)+(parseInt(cantProcesos)/49)+(parseInt(cantProcesos)/39)).toFixed(2);
-        console.log(total,"total");
-        document.getElementById('total').innerHTML = ` <h5> El total de personas requeridas son: ${total}</h5>`;
-        console.log(aplicacionPruebas);
+        document.getElementById('total').innerHTML = ` <h6 class="alert alert-success mt-3"> El total de personas requeridas son: ${total}</h6>`;
         
+        document.getElementById('tabla').innerHTML = 
+        `
+        <div class="row">
+        <div class="col">
+          <table class="table table-success">
+            <thead>
+              <tr>
+                <th>Proceso</th>
+                <th>Cantidad de Personas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Reclutamiento</td>
+                <td>${reclutamiento}</td>
+              </tr>
+              <tr>
+                <td>Preselección</td>
+                <td>${preseleccion}</td>
+              </tr>
+              <tr>
+                <td>Aplicación de pruebas</td>
+                <td>${aplicacionPruebas}</td>
+              </tr>
+              <tr>
+                <td>Valoración</td>
+                <td>${valoracion}</td>
+              </tr>
+              <tr>
+                <td>Actividades Finales</td>
+                <td>${actFinales}</td>
+              </tr>
+              <tr>
+                <td>Vinculación</td>
+                <td>${vinculacion}</td>
+              </tr>
+            </tbody>
+          </table>
+
+        `
+        ;
+
+
     }
 
 

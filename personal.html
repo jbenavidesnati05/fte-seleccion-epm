@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FTE SELECCIÓN EPM</title>
+    <title>Cálculo de planta de personal requerido | EPM</title>
     <link rel="icon" href="img/epm-logo-app-1.svg" sizes="32x32" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
@@ -27,18 +27,13 @@
     <section class="formulario">  
       <div>
         <label for="">Cantidad de procesos por mes </label>
-        <input id="cantProcesos" class="form-control mt-4" type="number" placeholder="Ingresar el numero de procesos por mes">
+        <input id="cantProcesos" class="form-control mt-4" type="number" placeholder="Ingresar el numero de procesos por mes" required>
         <input onclick="calcular()" class="btn btn-success mt-4 btn-block"  type="submit" value="Calcular">
     </div>
     </section>
     <div class="resultados mt-2">
-      <div id="resultadosPreseleccion"></div>
-      <div id="resultadosReclutamiento"></div>
-      <div id="aplicacionPruebas"></div>
-      <div id="valoracion"></div>
-      <div id="actFinales"></div>
-      <div id="vinculacion"></div>
-      <div  class="alert alert-success mt-3" id="total"></div>
+      <div id="tabla"></div>
+      <div id="total"></div>
     </div>
     <footer>
       <div class="logos container">
