@@ -26,6 +26,15 @@
     </header>
     <section class="formulario">  
       <div>
+        <label for="">Filial </label>
+        <select class="form-select" name="filial" id="filial">
+          <option value="epm">EPM</option>
+          <option value="cens">CENS</option>
+          <option value="chec">CHEC</option>
+          <option value="edeq">EDEQ</option>
+          <option value="essa">ESSA</option>
+          <option value="afinia">AFINIA</option>
+        </select>
         <label for="">Cantidad de procesos por mes </label>
         <input id="cantProcesos" class="form-control mt-4" type="number" placeholder="Ingresar el numero de procesos por mes" required>
         <input onclick="calcular()" class="btn btn-success mt-4 btn-block"  type="submit" value="Calcular">
