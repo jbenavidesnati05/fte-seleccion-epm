@@ -6,11 +6,11 @@ function calcular(){
     alert("Por favor ingresar la cantidad de procesos")
   }else{
     if(filial == "epm") {
-      const reclutamientoPre  = (parseInt(cantProcesos)/15).toFixed(2)
-      const aplicacionPruebas = (parseInt(cantProcesos)/12).toFixed(2)
-      const valoracion        = (parseInt(cantProcesos)/14).toFixed(2)
-      const actFinales        = (parseInt(cantProcesos)/49).toFixed(2)
-      const vinculacion       = (parseInt(cantProcesos)/26).toFixed(2)
+      const reclutamientoPre  = (parseInt(cantProcesos)/25).toFixed(2)
+      const aplicacionPruebas = (parseInt(cantProcesos)/39).toFixed(2)
+      const valoracion        = (parseInt(cantProcesos)/27).toFixed(2)
+      const actFinales        = (parseInt(cantProcesos)/101).toFixed(2)
+      const vinculacion       = (parseInt(cantProcesos)/39).toFixed(2)
 
       const total = ((parseInt(cantProcesos)/15)+(parseInt(cantProcesos)/25)+(parseInt(cantProcesos)/13)+(parseInt(cantProcesos)/14)+(parseInt(cantProcesos)/49)+(parseInt(cantProcesos)/39)).toFixed(2);
       document.getElementById('total').innerHTML = ` <h6 class="alert alert-success mt-3"> El total de personas requeridas son: ${total}</h6>`;
@@ -54,11 +54,11 @@ function calcular(){
       ;
   }
   else if(filial == "cens"){
-    const reclutamientoPre  = (parseInt(cantProcesos)/5).toFixed(2)
-    const aplicacionPruebas = (parseInt(cantProcesos)/88).toFixed(2)
-    const valoracion        = (parseInt(cantProcesos)/1).toFixed(2)
-    const actFinales        = (parseInt(cantProcesos)/100).toFixed(2)
-    const vinculacion       = (parseInt(cantProcesos)/3).toFixed(2)
+    const reclutamientoPre  = (parseInt(cantProcesos)/29).toFixed(2)
+    const aplicacionPruebas = (parseInt(cantProcesos)/39).toFixed(2)
+    const valoracion        = (parseInt(cantProcesos)/27).toFixed(2)
+    const actFinales        = (parseInt(cantProcesos)/101).toFixed(2)
+    const vinculacion       = (parseInt(cantProcesos)/39).toFixed(2)
 
     const total = ((parseInt(cantProcesos)/15)+(parseInt(cantProcesos)/25)+(parseInt(cantProcesos)/13)+(parseInt(cantProcesos)/14)+(parseInt(cantProcesos)/49)+(parseInt(cantProcesos)/39)).toFixed(2);
     document.getElementById('total').innerHTML = ` <h6 class="alert alert-success mt-3"> El total de personas requeridas son: ${total}</h6>`;
@@ -101,11 +101,11 @@ function calcular(){
     ;
   }
   else if(filial == "chec"){
-    const reclutamientoPre  = (parseInt(cantProcesos)/5).toFixed(2)
-    const aplicacionPruebas = (parseInt(cantProcesos)/88).toFixed(2)
-    const valoracion        = (parseInt(cantProcesos)/1).toFixed(2)
-    const actFinales        = (parseInt(cantProcesos)/100).toFixed(2)
-    const vinculacion       = (parseInt(cantProcesos)/3).toFixed(2)
+    const reclutamientoPre  = (parseInt(cantProcesos)/29).toFixed(2)
+    const aplicacionPruebas = (parseInt(cantProcesos)/39).toFixed(2)
+    const valoracion        = (parseInt(cantProcesos)/27).toFixed(2)
+    const actFinales        = (parseInt(cantProcesos)/101).toFixed(2)
+    const vinculacion       = (parseInt(cantProcesos)/39).toFixed(2)
 
     const total = ((parseInt(cantProcesos)/15)+(parseInt(cantProcesos)/25)+(parseInt(cantProcesos)/13)+(parseInt(cantProcesos)/14)+(parseInt(cantProcesos)/49)+(parseInt(cantProcesos)/39)).toFixed(2);
     document.getElementById('total').innerHTML = ` <h6 class="alert alert-success mt-3"> El total de personas requeridas son: ${total}</h6>`;
@@ -151,11 +151,11 @@ function calcular(){
 
   }
   else if(filial == "edeq"){
-    const reclutamientoPre  = (parseInt(cantProcesos)/5).toFixed(2)
-    const aplicacionPruebas = (parseInt(cantProcesos)/88).toFixed(2)
-    const valoracion        = (parseInt(cantProcesos)/1).toFixed(2)
-    const actFinales        = (parseInt(cantProcesos)/100).toFixed(2)
-    const vinculacion       = (parseInt(cantProcesos)/3).toFixed(2)
+    const reclutamientoPre  = (parseInt(cantProcesos)/29).toFixed(2)
+    const aplicacionPruebas = (parseInt(cantProcesos)/39).toFixed(2)
+    const valoracion        = (parseInt(cantProcesos)/27).toFixed(2)
+    const actFinales        = (parseInt(cantProcesos)/101).toFixed(2)
+    const vinculacion       = (parseInt(cantProcesos)/39).toFixed(2)
 
     const total = ((parseInt(cantProcesos)/15)+(parseInt(cantProcesos)/25)+(parseInt(cantProcesos)/13)+(parseInt(cantProcesos)/14)+(parseInt(cantProcesos)/49)+(parseInt(cantProcesos)/39)).toFixed(2);
     document.getElementById('total').innerHTML = ` <h6 class="alert alert-success mt-3"> El total de personas requeridas son: ${total}</h6>`;
@@ -201,11 +201,11 @@ function calcular(){
 
   }
   else if(filial == "essa"){
-    const reclutamientoPre  = (parseInt(cantProcesos)/5).toFixed(2)
-    const aplicacionPruebas = (parseInt(cantProcesos)/88).toFixed(2)
-    const valoracion        = (parseInt(cantProcesos)/1).toFixed(2)
-    const actFinales        = (parseInt(cantProcesos)/100).toFixed(2)
-    const vinculacion       = (parseInt(cantProcesos)/3).toFixed(2)
+    const reclutamientoPre  = (parseInt(cantProcesos)/29).toFixed(2)
+    const aplicacionPruebas = (parseInt(cantProcesos)/39).toFixed(2)
+    const valoracion        = (parseInt(cantProcesos)/27).toFixed(2)
+    const actFinales        = (parseInt(cantProcesos)/101).toFixed(2)
+    const vinculacion       = (parseInt(cantProcesos)/39).toFixed(2)
 
     const total = ((parseInt(cantProcesos)/15)+(parseInt(cantProcesos)/25)+(parseInt(cantProcesos)/13)+(parseInt(cantProcesos)/14)+(parseInt(cantProcesos)/49)+(parseInt(cantProcesos)/39)).toFixed(2);
     document.getElementById('total').innerHTML = ` <h6 class="alert alert-success mt-3"> El total de personas requeridas son: ${total}</h6>`;
@@ -251,11 +251,11 @@ function calcular(){
 
   }
   else if(filial == "afinia"){
-    const reclutamientoPre  = (parseInt(cantProcesos)/5).toFixed(2)
-    const aplicacionPruebas = (parseInt(cantProcesos)/88).toFixed(2)
-    const valoracion        = (parseInt(cantProcesos)/1).toFixed(2)
-    const actFinales        = (parseInt(cantProcesos)/100).toFixed(2)
-    const vinculacion       = (parseInt(cantProcesos)/3).toFixed(2)
+    const reclutamientoPre  = (parseInt(cantProcesos)/19).toFixed(2)
+    const aplicacionPruebas = (parseInt(cantProcesos)/39).toFixed(2)
+    const valoracion        = (parseInt(cantProcesos)/27).toFixed(2)
+    const actFinales        = (parseInt(cantProcesos)/101).toFixed(2)
+    const vinculacion       = (parseInt(cantProcesos)/39).toFixed(2)
 
     const total = ((parseInt(cantProcesos)/15)+(parseInt(cantProcesos)/25)+(parseInt(cantProcesos)/13)+(parseInt(cantProcesos)/14)+(parseInt(cantProcesos)/49)+(parseInt(cantProcesos)/39)).toFixed(2);
     document.getElementById('total').innerHTML = ` <h6 class="alert alert-success mt-3"> El total de personas requeridas son: ${total}</h6>`;
